@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <!--<div class="container">
+        <span class="container__loader"></span>
+    </div>-->
+    
     <div>
         <header class="header">
             <h1 class="header__logo">ohmyfood</h1>
@@ -26,7 +30,7 @@
             <section class="reserve">
                 <h2 class="reserve__title">Réservez le menu qui vous convient</h2>
                 <p class="reserve__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <button class="reserver__btn btn">Explorer nos restaurants</button>
+                <a href="#resto" class="reserve__btn btn">Explorer nos restaurants</a>
             </section>
             <section class="function">
                 <h2 class="function__title">Fonctionnement</h2>
@@ -45,7 +49,7 @@
                     </article>
                 </div>
             </section>
-            <section class="restaurant">
+            <section id="resto" class="restaurant">
                 <h2 class="restaurant__title">Restaurants</h2>
                 <div class="master-card">
                     <article class="master-card__restaurant">
@@ -57,7 +61,7 @@
                                 <p class="master-card__subtitle">Ménilmontant</p>
                             </div>
                             <div class="master-card__heart">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                                <i class="fa-regular fa-heart fa-2xl"></i>
                             </div>
                         </div>
                     </article>
@@ -69,8 +73,9 @@
                                 <h3 class="master-card__title">La note enchantée</h3>
                                 <p class="master-card__subtitle">Charonne</p>
                             </div>
-                            <div class="master-card__heart">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2xl heart--vide"></i>
+                                <i class="fa-regular fa-heart fa-2xl heart--plein"></i>
                             </div>
                         </div>
                     </article>
@@ -81,8 +86,9 @@
                                 <h3 class="master-card__title">À la française</h3>
                                 <p class="master-card__subtitle">Cité Rouge</p>
                             </div>
-                            <div class="master-card__heart">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2xl heart--vide"></i>
+                                <i class="fa-regular fa-heart fa-2xl heart--plein"></i>
                             </div>
                         </div>
                     </article>
@@ -93,10 +99,12 @@
                                 <h3 class="master-card__title">Le délice des sens</h3>
                                 <p class="master-card__subtitle">Folie-Méricourt</p>
                             </div>
-                            <div class="master-card__heart">
-                                <i class="fa-regular fa-heart fa-xl"></i>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart fa-2xl heart--vide"></i>
+                                <i class="fa-regular fa-heart fa-2xl heart--plein"></i>
                             </div>
                         </div>
+
                     </article>
                 </div>
             </section>
