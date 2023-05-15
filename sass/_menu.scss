@@ -1,0 +1,94 @@
+.header {
+   &__arrow {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: #000;
+   }  
+}
+
+.photo-restaurant {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.menu {
+    position: relative;
+    margin: -40px 0 0 0;
+    background-color: #F6F6F6;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        padding-left: 17px;
+    }
+
+    &__heart {
+        padding-right: 41px;
+    }
+}
+
+.carte {
+    margin-bottom: 40px;
+    &__title {
+        font-size: 16px;
+        font-weight: 300;
+        padding-left: 13px;
+    }
+}
+
+.card {
+    box-sizing: border-box;
+    &__content {
+        width: 95%;
+        height: 69px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin: 0 13px 13px 12px;
+    }
+    &__title {
+        margin: 0;
+        padding-top: 12px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+    &__subcontent {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        margin: 0;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    &__price {
+        margin: 0;
+        padding-right: 15px;
+        font-weight: 700;
+    }
+}
+
+.commande {
+    display: flex;
+    justify-content: center;
+    
+    &__btn {
+        width: 150px;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+    }
+}
