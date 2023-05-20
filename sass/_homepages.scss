@@ -4,6 +4,7 @@ body {
     background-color: #f3f3f3;
     box-sizing: border-box;
     min-width: 375px;
+    background-color: #ffffff;
 }
 
 .header {
@@ -29,8 +30,6 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: #eaeaea;
-    margin-bottom: 39.5px;
-
     &__icone {
         padding-top: 17px;
     }
@@ -50,6 +49,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f6f6f6;
+    padding-top: 39.5px;
+    padding-bottom: 30px;
     
     &__title {
         font-size: 24px;
@@ -86,7 +88,7 @@ body {
 
 .btn {
     position: relative;
-    z-index: 1;
+    z-index: 4;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
@@ -118,7 +120,6 @@ body {
 }
 
 .function {
-    margin-top: 57px;
     height: 440px;
     background-color: white;
 
@@ -213,6 +214,8 @@ body {
 }
 
 .restaurant {
+    background-color: #f6f6f6;
+    padding-bottom: 66px;
     &__title {
         font-size: 24px;
         font-weight: 700;
@@ -223,10 +226,12 @@ body {
             margin-left: 180px;
         }
     }
+    
 }
 
 .master-card {
-    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 
     @media (min-width: 750px){
         display: flex;
@@ -240,23 +245,8 @@ body {
         margin-right: 180px;
     }
 
-    &__badge {
-        z-index: 1;
-        position: absolute;
-        font-size: 14px;
-        color: #008766;
-        background-color: #99E2D0;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 2px;
-        width: 80px;
-        height: 29px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     &__restaurant {
+        position: relative;
         height: 251px;
         background-color: #fff;
         border-radius: 15px;
@@ -303,12 +293,25 @@ body {
         font-size: 17px;
         font-weight: 300;
         margin: 0;
+    }   
+}
+
+.badge {
+    position: absolute;
+    right: 15px; 
+    top: 15px;
+
+    &__text {
+    display: block;
+    background-color: #99E2D0; 
+    color: #008766;
+    padding: 7px;
+    border-radius: 2px;
     }
 }
 
 .bloc-footer {
     background-color: #353535;
-    margin-top: 66px;
 
     @media (min-width: 1080px) {
         display: flex;

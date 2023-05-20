@@ -20,10 +20,16 @@
     background-color: #F6F6F6;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+    @media (min-width: 1080px) {
+        max-width: 1050px;
+        margin-left: 20%;
+        margin-right: 20%;
+    } 
     &__top {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        
     }
 
     &__title {
@@ -31,6 +37,7 @@
         font-size: 28px;
         font-weight: 400;
         padding-left: 17px;
+        padding-right: 24px;
     }
 
     &__heart {
@@ -44,18 +51,41 @@
         font-size: 16px;
         font-weight: 300;
         padding-left: 13px;
+
+        &::after {
+            display: block;
+            content: "";
+            background-color: #99E2D0;
+            margin-top: 5px;
+            height: 3px;
+            width: 40px;
+        }
+
+        @media (min-width: 1080px){
+            margin-left: 20%;
+            margin-right: 20%;
+        }
     }
 }
 
 .card {
     box-sizing: border-box;
+    @media (min-width: 1080px){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
     &__content {
+        position: relative;
         width: 95%;
         height: 69px;
         background: #FFFFFF;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         margin: 0 13px 13px 12px;
+        @media (min-width: 1080px) {
+            min-width: 349px;
+            width: 100%;
+        }
     }
     &__title {
         margin: 0;
@@ -81,6 +111,7 @@
     }
 }
 
+
 .commande {
     display: flex;
     justify-content: center;
@@ -90,5 +121,6 @@
         text-decoration: none;
         font-size: 16px;
         text-align: center;
+        margin-bottom: 40px;
     }
 }
