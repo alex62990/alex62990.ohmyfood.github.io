@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #f3f3f3;
   box-sizing: border-box;
@@ -524,8 +525,9 @@ body {
   background-color: #F6F6F6;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  padding: 20px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 650px) {
   .menu {
     max-width: 1050px;
     margin-left: 20%;
@@ -541,7 +543,6 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
-  padding-left: 17px;
   padding-right: 24px;
 }
 .menu__heart {
@@ -565,7 +566,7 @@ body {
   width: 40px;
 }
 @media (min-width: 1080px) {
-  .carte__title {
+  .carte {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -574,48 +575,73 @@ body {
 .card {
   box-sizing: border-box;
 }
+.card__content {
+  background-color: white;
+  height: 69px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 12px;
+  max-width: 634px;
+}
+.card__content:hover .card__check {
+  width: 75px;
+  opacity: 1;
+  transition: width 300ms, opacity 300ms;
+}
 @media (min-width: 1080px) {
   .card {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-.card__content {
-  position: relative;
-  width: 95%;
-  height: 69px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin: 0 13px 13px 12px;
-}
-@media (min-width: 1080px) {
-  .card__content {
     min-width: 349px;
     width: 100%;
   }
 }
-.card__title {
-  margin: 0;
-  padding-top: 12px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  font-size: 18px;
-}
 .card__subcontent {
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
+.card__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .card__subtitle {
   margin: 0;
-  padding-left: 15px;
   font-size: 15px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__price {
   margin: 0;
-  padding-right: 15px;
-  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+.card__check {
+  background-color: #99E2D0;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  transition: width 300ms, opacity 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__check-in {
+  color: white;
 }
 
 .commande {
