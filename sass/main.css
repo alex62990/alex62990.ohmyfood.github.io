@@ -455,7 +455,7 @@ body {
 }
 
 .delay-0 {
-  animation-delay: 0;
+  animation-delay: 0ms;
 }
 
 .delay-1 {
