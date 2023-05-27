@@ -1,3 +1,5 @@
+$linear-gradient: linear-gradient(#FF79DA,#9356DC);
+
 .container {
     position:fixed;
     z-index: 1000;
@@ -77,7 +79,7 @@
     &--plein {
         position: absolute;
         opacity: 0;
-        background: linear-gradient(#FF79DA,#9356DC);
+        background: $linear-gradient;
         background-clip: text;
         color: transparent;
         transition: opacity 1s;
@@ -91,20 +93,19 @@
 }
 
 
+$num-delay: 10;
+$anim-dur: 2500ms;
+$anim-delay: calc($anim-dur / $num-delay);
+
 .card__content {
-    animation: slide 2s;
+    animation: slide $anim-dur;
+    @for $i from 1 through $num-delay {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
     animation-fill-mode: backwards;
 }
-.delay-0 {animation-delay: 0ms;}
-.delay-1 {animation-delay: 100ms;}
-.delay-2 {animation-delay: 200ms;}
-.delay-3 {animation-delay: 300ms;}
-.delay-4 {animation-delay: 400ms;}
-.delay-5 {animation-delay: 500ms;}
-.delay-6 {animation-delay: 600ms;}
-.delay-7 {animation-delay: 700ms;}
-.delay-8 {animation-delay: 800ms;}
-.delay-9 {animation-delay: 900ms;}
 
 @keyframes slide {
     from {
