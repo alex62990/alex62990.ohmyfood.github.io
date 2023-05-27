@@ -450,48 +450,38 @@ body {
 }
 
 .card__content {
-  animation: slide 2s;
+  animation: slide 2500ms;
   animation-fill-mode: backwards;
 }
-
-.delay-0 {
-  animation-delay: 0ms;
+.card__content--1 {
+  animation-delay: 250ms;
 }
-
-.delay-1 {
-  animation-delay: 100ms;
-}
-
-.delay-2 {
-  animation-delay: 200ms;
-}
-
-.delay-3 {
-  animation-delay: 300ms;
-}
-
-.delay-4 {
-  animation-delay: 400ms;
-}
-
-.delay-5 {
+.card__content--2 {
   animation-delay: 500ms;
 }
-
-.delay-6 {
-  animation-delay: 600ms;
+.card__content--3 {
+  animation-delay: 750ms;
 }
-
-.delay-7 {
-  animation-delay: 700ms;
+.card__content--4 {
+  animation-delay: 1000ms;
 }
-
-.delay-8 {
-  animation-delay: 800ms;
+.card__content--5 {
+  animation-delay: 1250ms;
 }
-
-.delay-9 {
-  animation-delay: 900ms;
+.card__content--6 {
+  animation-delay: 1500ms;
+}
+.card__content--7 {
+  animation-delay: 1750ms;
+}
+.card__content--8 {
+  animation-delay: 2000ms;
+}
+.card__content--9 {
+  animation-delay: 2250ms;
+}
+.card__content--10 {
+  animation-delay: 2500ms;
 }
 
 @keyframes slide {
