@@ -21,8 +21,8 @@
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     padding: 20px;
-    @media (min-width: 650px) {
-        max-width: 1050px;
+    @media (min-width: 768px) {
+        max-width: 1024px;
         margin-left: 20%;
         margin-right: 20%;
     } 
@@ -61,7 +61,7 @@
             width: 40px;
         }
     }
-    @media (min-width: 1080px){
+    @media (min-width: 1024px){
         margin-left: 20%;
         margin-right: 20%;
     }
@@ -78,14 +78,14 @@
         justify-content: space-between;
         overflow: hidden;
         margin-bottom: 12px;
-        max-width: 634px;
+        
         &:hover .card__check {
             width: 75px;
             opacity: 1;
             transition: width 300ms, opacity 300ms;
         }
         }
-        @media (min-width: 1080px) {
+        @media (min-width: 1024px) {
             min-width: 349px;
             width: 100%;
         }

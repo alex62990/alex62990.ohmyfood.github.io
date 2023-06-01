@@ -14,15 +14,13 @@ body {
   gap: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .header__logo {
-  font-size: 30px;
-  font-weight: 400;
-  font-family: "Shrikhand", sans-serif;
-  text-align: center;
-  margin-top: 14px;
+  width: 162px;
+  height: 30px;
 }
 
 .local {
@@ -61,7 +59,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .reserve__title {
     width: auto;
     font-size: 40px;
@@ -75,7 +73,7 @@ body {
   text-align: center;
   margin-top: 0;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .reserve__subtitle {
     width: auto;
   }
@@ -118,7 +116,7 @@ body {
   height: 440px;
   background-color: white;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .function {
     height: auto;
   }
@@ -129,13 +127,13 @@ body {
   padding-left: 20px;
   padding-top: 48px;
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .function__title {
     display: flex;
     justify-content: center;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .function__title {
     display: block;
     margin-left: 180px;
@@ -147,7 +145,7 @@ body {
   font-size: 16px;
   align-items: center;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .function__cards {
     display: flex;
     flex-direction: row;
@@ -188,23 +186,59 @@ body {
   margin-right: 20px;
   margin-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .function__list {
+    width: 290px;
+    padding-left: 5px;
+  }
+}
 
 .fa-mobile-screen-button {
   position: relative;
   right: 33px;
   color: #7e7e7e;
+  transition: color 500ms;
+}
+.fa-mobile-screen-button:hover {
+  color: #9356DC;
+  transition: color 500ms;
+}
+@media (min-width: 1024px) {
+  .fa-mobile-screen-button {
+    right: 20px;
+  }
 }
 
 .fa-list-ul {
   position: relative;
   right: 37px;
   color: #7e7e7e;
+  transition: color 500ms;
+}
+.fa-list-ul:hover {
+  color: #9356DC;
+  transition: color 500ms;
+}
+@media (min-width: 1024px) {
+  .fa-list-ul {
+    right: 20px;
+  }
 }
 
 .fa-store {
   position: relative;
   right: 33px;
+  color: #7e7e7e;
+  transition: color 500ms;
+}
+.fa-store:hover {
   color: #9356DC;
+  transition: color 500ms;
+}
+@media (min-width: 1024px) {
+  .fa-store {
+    right: 25px;
+  }
 }
 
 .restaurant {
@@ -217,7 +251,7 @@ body {
   padding-left: 20px;
   padding-top: 48px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .restaurant__title {
     margin-left: 180px;
   }
@@ -227,7 +261,7 @@ body {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .master-card {
     display: flex;
     flex-direction: row;
@@ -235,7 +269,7 @@ body {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .master-card {
     margin-left: 180px;
     margin-right: 180px;
@@ -248,12 +282,12 @@ body {
   border-radius: 15px;
   margin: 0 18px 18px 18px;
 }
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   .master-card__restaurant {
     width: 40%;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 10240px) {
   .master-card__restaurant {
     width: 45%;
     margin-bottom: 50px;
@@ -304,7 +338,7 @@ body {
 .bloc-footer {
   background-color: #353535;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .bloc-footer {
     display: flex;
     flex-direction: row-reverse;
@@ -320,7 +354,7 @@ body {
   margin: 0;
   padding-bottom: 16px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .bloc-footer__title {
     padding-right: 15px;
     padding-top: 60px;
@@ -333,7 +367,7 @@ body {
   padding-bottom: 22px;
   margin-top: 0;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .bloc-footer__liste {
     display: flex;
     flex-direction: row;
@@ -344,7 +378,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .bloc-footer__lien {
     padding-left: 10px;
   }
@@ -352,7 +386,7 @@ body {
 .bloc-footer__subliste {
   padding-bottom: 7px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .bloc-footer__subliste {
     padding-right: 25px;
     padding-top: 64px;
@@ -517,9 +551,9 @@ body {
   border-top-right-radius: 35px;
   padding: 20px;
 }
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .menu {
-    max-width: 1050px;
+    max-width: 1024px;
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -555,7 +589,7 @@ body {
   height: 3px;
   width: 40px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .carte {
     margin-left: 20%;
     margin-right: 20%;
@@ -574,14 +608,13 @@ body {
   justify-content: space-between;
   overflow: hidden;
   margin-bottom: 12px;
-  max-width: 634px;
 }
 .card__content:hover .card__check {
   width: 75px;
   opacity: 1;
   transition: width 300ms, opacity 300ms;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .card {
     min-width: 349px;
     width: 100%;
